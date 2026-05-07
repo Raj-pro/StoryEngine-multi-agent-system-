@@ -1,0 +1,28 @@
+model:
+  name: claude-sonnet-4-6
+  max_tokens_chapter: 1200
+  max_tokens_outline: 8192
+  max_tokens_world: 4096
+
+story:
+  total_chapters: 100
+  arcs: 5
+  chapters_per_arc: 20
+  target_words_per_chapter: 700
+
+convergence:
+  consistency_threshold: 0.85
+  max_rewrite_attempts: 3
+  soft_score_weights:
+    consistency: 0.40
+    logic: 0.25
+    tone: 0.20
+    outline_alignment: 0.15
+
+memory:
+  rolling_summary_chapters: 3
+  vector_top_k: 5
+
+logging:
+  level: INFO
+  file: data/logs/story_gen.log

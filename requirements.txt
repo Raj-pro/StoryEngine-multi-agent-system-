@@ -1,0 +1,13 @@
+ollama>=0.3.0
+streamlit>=1.37.0
+neo4j>=5.14.0
+chromadb>=0.4.22
+pydantic>=2.5.0
+pydantic-settings>=2.1.0
+python-dotenv>=1.0.0
+typer>=0.9.0
+rich>=13.7.0
+httpx>=0.26.0
+tenacity>=8.2.3
+structlog>=24.1.0
+PyYAML>=6.0.1
