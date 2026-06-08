@@ -54,5 +54,5 @@ class ExtractorAgent:
                 chapter=chapter_number,
             )
             for f in data.get("facts", [])
-            if f.get("subject")  # skip facts with no subject at all
+            if f.get("subject")  
         ]
