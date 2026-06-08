@@ -18,7 +18,6 @@ class SummaryManager:
         self._recent.append(chapter)
         if len(self._recent) > self._window:
             oldest = self._recent.pop(0)
-            # Fold the evicted chapter into the cumulative summary
             self._cumulative_summary = (
                 f"{self._cumulative_summary}\n"
                 f"[Ch {oldest.number} – {oldest.title}]: "
